@@ -3,6 +3,7 @@ body {
   -moz-user-select: none;
   -webkit-user-select: none;
   -ms-user-select: none;
+  background-image: url('images/main-menu.jpg')
 }
 
 html, body{
@@ -28,6 +29,7 @@ html, body{
   text-align: center;
   font-size: 5rem;
   transition: transform 0.2s;
+  cursor: pointer;
 }
 
 .menu:hover{
