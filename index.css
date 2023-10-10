@@ -3,7 +3,24 @@ body {
   -moz-user-select: none;
   -webkit-user-select: none;
   -ms-user-select: none;
-  background-image: url('images/main-menu.jpg')
+  background-image: url('images/main-menu.jpg');
+  overflow: hidden;
+}
+
+.transition-block{
+  display: flex;
+  background-color: black;
+  border-color: black;
+}
+
+.transition-container{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  transform: translateX(100%);
+  z-index: 9999;
 }
 
 html, body{
@@ -86,4 +103,14 @@ html, body{
     width: 80%;
     min-width: 0px;  
   }
+}
+
+@keyframes sliding-left-in {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(0); }
+}
+
+@keyframes sliding-left-out {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
 }
